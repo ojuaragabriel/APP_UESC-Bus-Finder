@@ -1,0 +1,42 @@
+import type { BusSchedule } from '@/types';
+
+export const allSchedules: BusSchedule[] = [
+  // *** SAIR DA UESC ***
+  { id: 's01', direcao: 'SAIR_DA_UESC', origem: 'Salobrinho', hora: '05:50', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's02', direcao: 'SAIR_DA_UESC', origem: 'Salobrinho', hora: '06:00', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's03', direcao: 'SAIR_DA_UESC', origem: 'Salobrinho', hora: '06:30', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's04', direcao: 'SAIR_DA_UESC', origem: 'Salobrinho', hora: '07:00', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's05', direcao: 'SAIR_DA_UESC', origem: 'Atacadão', hora: '07:15', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's06', direcao: 'SAIR_DA_UESC', origem: 'Salobrinho', hora: '07:20', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's07', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '07:20', empresa: 'VM', linha: '26', via: 'Cidade Nova', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's08', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '07:25', empresa: 'SM', linha: '26', via: 'Princesa Isabel', destino: 'Zona Sul', diaTipo: 'UTEIS' },
+  { id: 's09', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '12:10', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's10', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '13:00', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's11', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '17:15', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's12', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '18:10', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's13', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '18:30', empresa: 'SM', linha: '26', via: 'Princesa Isabel', destino: 'Zona Sul', diaTipo: 'UTEIS' },
+  { id: 's14', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '19:15', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's15', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '21:30', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+  { id: 's16', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '22:10', empresa: 'VM', linha: '26/28', via: 'Av. Itabuna / Av. Esperança', destino: 'Zona Sul / Zona Norte', diaTipo: 'UTEIS' },
+  { id: 's17', direcao: 'SAIR_DA_UESC', origem: 'UESC', hora: '22:40', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Terminal Urbano', diaTipo: 'UTEIS' },
+
+  // *** IR PARA A UESC ***
+  { id: 'i01', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '05:00', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i02', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '05:30', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i03', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '05:50', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Atacadão', diaTipo: 'UTEIS' },
+  { id: 'i04', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '06:00', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i05', direcao: 'IR_PARA_UESC', origem: 'Zona Sul', hora: '06:00', empresa: 'SM', linha: '26', via: 'Princesa Isabel', destino: 'UESC', chegadaPrevista: '06:40', diaTipo: 'UTEIS' },
+  { id: 'i06', direcao: 'IR_PARA_UESC', origem: 'Zona Sul', hora: '06:00', empresa: 'SM', linha: '26', via: 'Av. Itabuna', destino: 'UESC', chegadaPrevista: '06:40', diaTipo: 'UTEIS' },
+  { id: 'i07', direcao: 'IR_PARA_UESC', origem: 'Nelson Costa', hora: '06:10', empresa: 'VM', linha: '26', via: 'Princesa Isabel', destino: 'UESC', diaTipo: 'UTEIS' },
+  { id: 'i08', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '06:20', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i09', direcao: 'IR_PARA_UESC', origem: 'Zona Norte', hora: '06:20', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'UESC', diaTipo: 'UTEIS' },
+  { id: 'i10', direcao: 'IR_PARA_UESC', origem: 'Morada do Bosque', hora: '06:20', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'UESC', diaTipo: 'UTEIS' },
+  { id: 'i11', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '06:30', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i12', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '06:45', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Atacadão', diaTipo: 'UTEIS' },
+  { id: 'i13', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '07:00', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i14', direcao: 'IR_PARA_UESC', origem: 'Zona Sul', hora: '12:00', empresa: 'SM', linha: '26', via: 'Princesa Isabel', destino: 'UESC', chegadaPrevista: '12:40', diaTipo: 'UTEIS' },
+  { id: 'i15', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '12:20', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i16', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '18:20', empresa: 'SM', linha: '27', via: 'Av. Itabuna', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+  { id: 'i17', direcao: 'IR_PARA_UESC', origem: 'Zona Norte', hora: '18:30', empresa: 'VM', linha: '26', via: 'Av. Esperança', destino: 'UESC', diaTipo: 'UTEIS' },
+  { id: 'i18', direcao: 'IR_PARA_UESC', origem: 'Terminal Urbano', hora: '21:40', empresa: 'VM', linha: '28', via: 'Cidade Nova', destino: 'Salobrinho/UESC', diaTipo: 'UTEIS' },
+];
