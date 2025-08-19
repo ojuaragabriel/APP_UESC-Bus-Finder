@@ -32,10 +32,16 @@ export default function Home() {
           </TabsContent>
         </Tabs>
 
-        <footer className="p-4 text-center text-xs text-muted-foreground bg-card border-t">
-          <p className="font-semibold">Horários atualizados em 14/03/2022 – Dias úteis</p>
-          <p className="mt-1">Sujeito a alteração. Dúvidas/Sugestões:</p>
-          <p>transporte.sutram@ilheus.ba.gov.br • (73) 3223-4423</p>
+        <footer className="p-4 text-center text-sm text-muted-foreground bg-card border-t">
+          <p>Desenvolvido por Gabriel Cerqueira</p>
+          <a 
+            href="https://www.linkedin.com/in/ojuaragabriel" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-primary hover:underline"
+          >
+            linkedin.com/in/ojuaragabriel
+          </a>
         </footer>
       </main>
     </div>
