@@ -66,19 +66,19 @@ export default function BusScheduleView({ schedules }: BusScheduleViewProps) {
     })
 
     const nowInMinutes = currentTime.getHours() * 60 + currentTime.getMinutes()
-    let nextIndex = -1
-    let nextId = null
+    let foundNextBusIndex = -1
+    let foundNextBusId = null
     
     for (let i = 0; i < filteredSchedules.length; i++) {
         const [h, m] = filteredSchedules[i].hora.split(':').map(Number);
         if (h * 60 + m >= nowInMinutes) {
-            nextIndex = i;
-            nextId = filteredSchedules[i].id;
+            foundNextBusIndex = i;
+            foundNextBusId = filteredSchedules[i].id;
             break;
         }
     }
 
-    return { groupedSchedules: groups, nextBusIndex, nextBusId }
+    return { groupedSchedules: groups, nextBusIndex: foundNextBusIndex, nextBusId: foundNextBusId }
   }, [filteredSchedules, currentTime])
 
 
