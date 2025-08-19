@@ -9,7 +9,7 @@ export interface BusSchedule {
   linha: string;
   via: string;
   destino: string;
-  chegadaPrevista?: string; // "HH:mm"
+  chegadaPrevista?: string | null; // "HH:mm"
   observacoes?: string;
   diaTipo: 'UTEIS';
 }
@@ -20,3 +20,5 @@ export interface FilterState {
   via: string;
   linha: string;
 }
+
+    
