@@ -126,7 +126,7 @@ export default function BusScheduleView({ schedules }: BusScheduleViewProps) {
   const allHoursPassed = nextBusIndex === -1 && filteredSchedules.length > 0;
 
   return (
-    <div className="h-full flex flex-col relative">
+  <div className="h-full flex flex-col relative w-full max-w-full overflow-x-hidden">
       <FilterControls
         filters={filters}
         onFilterChange={handleFilterChange}
@@ -134,12 +134,12 @@ export default function BusScheduleView({ schedules }: BusScheduleViewProps) {
         uniqueVias={uniqueVias}
         uniqueLinhas={uniqueLinhas}
       />
-      <div ref={listRef} className="flex-grow overflow-y-auto p-2 sm:p-4 space-y-4">
+  <div ref={listRef} className="flex-grow overflow-y-auto p-2 sm:p-4 space-y-4 w-full max-w-full overflow-x-hidden">
         {Object.keys(groupedSchedules).length > 0 ? (
           Object.entries(groupedSchedules).map(([hour, schedulesInHour]) => (
-            <div key={hour} className="space-y-3">
+            <div key={hour} className="space-y-3 w-full max-w-full">
               <h2 className="font-bold text-xl text-primary/80 pl-2">{hour}h</h2>
-              <div className="space-y-3">
+              <div className="space-y-3 w-full max-w-full">
                 {schedulesInHour.map((schedule, idx) => {
                     const isNext = schedule.id === nextBusId;
                     return (

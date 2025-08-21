@@ -50,9 +50,8 @@ export default function ScheduleCard({ schedule, currentTime, isNext }: Schedule
   }, [schedule.hora, currentTime]);
 
   const cardClasses = cn(
-    "transition-all duration-300",
-    timeStatus.state === "passed" && "opacity-50 grayscale-[50%]",
-    isNext && "border-primary border-2 shadow-lg scale-105"
+    "transition-all duration-300 rounded-xl border-2",
+    isNext ? "border-[#7c3aed] shadow-lg" : "border-muted",
   );
 
   const badgeClasses = cn({
@@ -63,51 +62,51 @@ export default function ScheduleCard({ schedule, currentTime, isNext }: Schedule
 
   return (
     <Card className={cardClasses}>
-      <CardContent className="p-4 grid grid-cols-3 gap-4 items-center">
+      <CardContent className="p-2 grid grid-cols-3 gap-2 items-center">
         <div className="col-span-1 flex flex-col items-center justify-center text-center">
-          <div className="flex items-center gap-1.5 font-bold text-2xl md:text-3xl text-primary">
-            <Clock className="h-6 w-6" />
+          <div className="flex items-center gap-1 font-bold text-lg md:text-xl text-primary">
+            <Clock className="h-5 w-5" />
             <span>{schedule.hora}</span>
           </div>
 
           {schedule.chegadaPrevista && (
-            <div className="flex items-center text-xs text-muted-foreground mt-1" title="Chegada prevista">
-              <CheckCircle className="h-3 w-3 mr-1" />
+            <div className="flex items-center text-[10px] text-muted-foreground mt-0.5" title="Chegada prevista">
+              <CheckCircle className="h-2.5 w-2.5 mr-1" />
               ~{schedule.chegadaPrevista}
             </div>
           )}
 
           {timeStatus.label && (
-            <Badge variant="outline" className={cn("mt-2", badgeClasses)}>
+            <Badge variant="outline" className={cn("mt-1", badgeClasses)}>
               {timeStatus.label}
             </Badge>
           )}
         </div>
 
-        <div className="col-span-2 space-y-2 text-sm">
-          <div className="flex items-center gap-2">
-            <MapPin className="h-4 w-4 text-primary/80" />
+        <div className="col-span-2 space-y-1 text-xs">
+          <div className="flex items-center gap-1.5">
+            <MapPin className="h-3.5 w-3.5 text-primary/80" />
             <div>
               <span className="font-medium">Origem:</span> {schedule.origem}
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <Route className="h-4 w-4 text-primary/80" />
+          <div className="flex items-center gap-1.5">
+            <Route className="h-3.5 w-3.5 text-primary/80" />
             <div>
               <span className="font-medium">Via:</span> {schedule.via}
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <Bus className="h-4 w-4 text-primary/80" />
+          <div className="flex items-center gap-1.5">
+            <Bus className="h-3.5 w-3.5 text-primary/80" />
             <div>
               <span className="font-medium">Linha:</span> {schedule.linha} ({schedule.empresa})
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <Building className="h-4 w-4 text-primary/80" />
+          <div className="flex items-center gap-1.5">
+            <Building className="h-3.5 w-3.5 text-primary/80" />
             <div>
               <span className="font-medium">Destino:</span> {schedule.destino}
             </div>

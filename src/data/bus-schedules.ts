@@ -93,7 +93,7 @@ export const allSchedules: BusSchedule[] = [
   { "id": "i26", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBANO", "hora": "11:20", "empresa": "SM", "linha": "27", "via": "AV. ITABUNA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },
   { "id": "i27", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBANO", "hora": "11:40", "empresa": "VM", "linha": "28", "via": "CIDADE NOVA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },
   { "id": "i28", "direcao": "IR_PARA_UESC", "origem": "ZONA NORTE", "hora": "11:50", "empresa": "VM", "linha": "26", "via": "AV. ESPERANÇA", "destino": "UESC", "diaTipo": "UTEIS", "chegadaPrevista": null },
-  { "id": "i29", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBano", "hora": "12:00", "empresa": "SM", "linha": "27", "via": "AV. ITABUNA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },
+  { "id": "i29", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBANO", "hora": "12:00", "empresa": "SM", "linha": "27", "via": "AV. ITABUNA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },
   { "id": "i30", "direcao": "IR_PARA_UESC", "origem": "ZONA SUL", "hora": "12:00", "empresa": "SM", "linha": "26", "via": "VIA PRINCESA ISABEL", "destino": "UESC", "diaTipo": "UTEIS", "chegadaPrevista": "12:40" },
   { "id": "i31", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBANO", "hora": "12:15", "empresa": "VM", "linha": "28", "via": "CIDADE NOVA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },
   { "id": "i32", "direcao": "IR_PARA_UESC", "origem": "TERMINAL URBANO", "hora": "12:30", "empresa": "SM", "linha": "27", "via": "AV. ITABUNA", "destino": "SALOBRINHO", "diaTipo": "UTEIS", "chegadaPrevista": null },

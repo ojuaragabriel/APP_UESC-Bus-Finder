@@ -1,5 +1,4 @@
-# Firebase Studio
 
-This is a NextJS starter in Firebase Studio.
+Projeto Next.js para consulta de horários de ônibus UESC, IF e SESI.
 
-To get started, take a look at src/app/page.tsx.
+Para começar, veja src/app/page.tsx.

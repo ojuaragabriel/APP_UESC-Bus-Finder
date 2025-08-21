@@ -21,23 +21,23 @@ export default function FilterControls({
   uniqueLinhas
 }: FilterControlsProps) {
   return (
-    <div className="p-4 space-y-4 bg-card border-b sticky top-0 z-10">
+    <div className="p-2 space-y-2 bg-card border-b sticky top-0 z-10">
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+        <Search className="absolute left-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <Input
           type="text"
           placeholder="Buscar por via, empresa, destino..."
-          className="pl-10 h-12 text-base"
+          className="pl-8 h-9 text-sm"
           value={filters.searchTerm}
           onChange={(e) => onFilterChange({ searchTerm: e.target.value })}
           aria-label="Buscar horários"
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">
         <Select value={filters.origem} onValueChange={(value) => onFilterChange({ origem: value === 'all' ? '' : value })}>
-          <SelectTrigger className="h-11">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin className="h-4 w-4" />
+          <SelectTrigger className="h-8">
+            <div className="flex items-center gap-1 text-muted-foreground text-xs">
+              <MapPin className="h-3 w-3" />
               <SelectValue placeholder="Origem" />
             </div>
           </SelectTrigger>
@@ -48,9 +48,9 @@ export default function FilterControls({
         </Select>
 
         <Select value={filters.via} onValueChange={(value) => onFilterChange({ via: value === 'all' ? '' : value })}>
-          <SelectTrigger className="h-11">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Route className="h-4 w-4" />
+          <SelectTrigger className="h-8">
+            <div className="flex items-center gap-1 text-muted-foreground text-xs">
+              <Route className="h-3 w-3" />
               <SelectValue placeholder="Via" />
             </div>
           </SelectTrigger>
@@ -61,9 +61,9 @@ export default function FilterControls({
         </Select>
 
         <Select value={filters.linha} onValueChange={(value) => onFilterChange({ linha: value === 'all' ? '' : value })}>
-          <SelectTrigger className="h-11">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Bus className="h-4 w-4" />
+          <SelectTrigger className="h-8">
+            <div className="flex items-center gap-1 text-muted-foreground text-xs">
+              <Bus className="h-3 w-3" />
               <SelectValue placeholder="Linha" />
             </div>
           </SelectTrigger>
