@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'UESC Bus Finder',
+  title: 'HoráIOS',
   description: 'Horários de ônibus para a UESC',
 };
 

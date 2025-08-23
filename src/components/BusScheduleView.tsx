@@ -165,7 +165,6 @@ export default function BusScheduleView({ schedules }: BusScheduleViewProps) {
             <div className="text-center p-8 my-8 bg-primary/10 rounded-lg">
                 <h3 className="font-bold text-lg text-primary">Sem mais partidas hoje.</h3>
                 <p className="text-muted-foreground mt-1">Os horários para hoje acabaram.</p>
-                <Button onClick={scrollToTop} className="mt-4">Ver horários do início do dia</Button>
             </div>
         )}
       </div>

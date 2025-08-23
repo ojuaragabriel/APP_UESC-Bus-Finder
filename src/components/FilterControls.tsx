@@ -22,17 +22,7 @@ export default function FilterControls({
 }: FilterControlsProps) {
   return (
     <div className="p-2 space-y-2 bg-card border-b sticky top-0 z-10">
-      <div className="relative">
-        <Search className="absolute left-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input
-          type="text"
-          placeholder="Buscar por via, empresa, destino..."
-          className="pl-8 h-9 text-sm"
-          value={filters.searchTerm}
-          onChange={(e) => onFilterChange({ searchTerm: e.target.value })}
-          aria-label="Buscar horários"
-        />
-      </div>
+      
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">
         <Select value={filters.origem} onValueChange={(value) => onFilterChange({ origem: value === 'all' ? '' : value })}>
           <SelectTrigger className="h-8">
