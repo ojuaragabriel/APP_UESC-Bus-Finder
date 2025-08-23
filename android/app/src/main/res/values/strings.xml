@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">UESC Bus Finder</string>
-    <string name="title_activity_main">UESC Bus Finder</string>
-    <string name="package_name">br.com.uesc.busfinder</string>
-    <string name="custom_url_scheme">br.com.uesc.busfinder</string>
+    <string name="app_name">HorárIOS</string>
+    <string name="title_activity_main">HorárIOS</string>
+    <string name="package_name">br.com.HorárIOS</string>
+    <string name="custom_url_scheme">br.com.HorárIOS</string>
 </resources>
