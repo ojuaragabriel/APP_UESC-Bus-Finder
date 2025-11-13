@@ -4,7 +4,7 @@
   <img src="https://drive.google.com/uc?export=view&id=1G2h58ldZzze3qF3bqec0kPsBTzdexQpO" alt="Preview UESC Bus Finder" width="300" />
 </p>
 
-Aplicação web para consulta rápida de horários de ônibus que atendem a UESC, IF e SESI, com foco na comunidade acadêmica de Ilhéus.
+Aplicação Mobile para consulta rápida de horários de ônibus que atendem a UESC, IF e SESI, com foco na comunidade acadêmica de Ilhéus.
 
 Acesse a versão em produção: https://uesc-bus-finder.vercel.app
 
